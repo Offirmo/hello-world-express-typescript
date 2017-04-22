@@ -1,0 +1,43 @@
+{
+  "name": "hello-world-express-typescript",
+  "version": "0.0.1",
+  "description": "Minimal express.js app in typescript, deployable on heroku :rooster: :koala: :dragon:",
+  "main": "index.js",
+  "repository": "https://github.com/Offirmo/hello-world-express-typescript.git",
+  "author": "Offirmo <offirmo.net@gmail.com>",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "7.x"
+  },
+  "scripts": {
+
+    "__prod": "~~~~~~ PRODUCTION ~~~~~~",
+    "prebuild": "rm -rf dist",
+    "build": "tsc --project meta",
+    "start": "node dist/src.es7.cjs/index.js",
+
+    "__dev": "~~~~~~ DEVELOPMENT ~~~~~~",
+    "dev1": "tsc -p meta/dev --watch",
+    "dev": "run-p dev1",
+    "start:dev": "nodemon --config meta/dev/nodemon.json dist/src.es7.cjs/index.js",
+
+    "__misc": "~~~~~~ MISC ~~~~~~",
+
+    "__local_tools": "~~~~~~ Tools installed locally ~~~~~~",
+
+    "__shortcuts": "~~~~~~ Shortcuts ~~~~~~"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "lodash": "^4.17.4",
+    "typescript-string-enums": "^0.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.35",
+    "@types/lodash": "^4.14.63",
+    "@types/node": "^7.0.13",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
+    "typescript": "^2.2.2"
+  }
+}
