@@ -2,7 +2,7 @@
 	"compileOnSave": false,
 	"compilerOptions": {
 		"allowJs": false,
-		"lib": [ "DOM", "es7" ],
+		"lib": [ "ES2017" ],
 		"moduleResolution": "node",
 
 		"listEmittedFiles": false,
@@ -30,6 +30,7 @@
 		"newLine": "lf",
 
 		"noEmit": false,
+		"declaration": false,
 		"module": "CommonJS",
 		"outDir": "../dist/src.es7.cjs",
 		"target": "es2017"
