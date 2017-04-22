@@ -10,21 +10,16 @@
     "node": "7.x"
   },
   "scripts": {
-
     "__prod": "~~~~~~ PRODUCTION ~~~~~~",
     "prebuild": "rm -rf dist",
     "build": "tsc --project meta",
     "start": "node dist/src.es7.cjs/index.js",
-
     "__dev": "~~~~~~ DEVELOPMENT ~~~~~~",
     "dev1": "tsc -p meta/dev --watch",
     "dev": "run-p dev1",
     "start:dev": "nodemon --config meta/dev/nodemon.json dist/src.es7.cjs/index.js",
-
     "__misc": "~~~~~~ MISC ~~~~~~",
-
     "__local_tools": "~~~~~~ Tools installed locally ~~~~~~",
-
     "__shortcuts": "~~~~~~ Shortcuts ~~~~~~"
   },
   "dependencies": {
@@ -38,6 +33,10 @@
     "@types/node": "^7.0.13",
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2",
+    "pre-commit": "^1.2.2",
     "typescript": "^2.2.2"
-  }
+  },
+  "pre-commit": [
+    "build"
+  ]
 }
