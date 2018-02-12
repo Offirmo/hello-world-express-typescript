@@ -17,8 +17,8 @@ References:
 
 ## Installation and launch
 ```bash
-nvm install 7
-yarn
+nvm install
+npm install
 npm start
 ```
 

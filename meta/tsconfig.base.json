@@ -7,10 +7,11 @@
 
 		"listEmittedFiles": false,
 		"listFiles": false,
-		"skipDefaultLibCheck": false,
+		"skipDefaultLibCheck": true,
 		"noEmitOnError": true,
 		"pretty": true,
 
+		"strict": true,
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,
 		"forceConsistentCasingInFileNames": true,
@@ -21,6 +22,7 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"strictNullChecks": true,
+		"strictFunctionTypes": true,
 
 		"alwaysStrict": true,
 		"emitDecoratorMetadata": true,
