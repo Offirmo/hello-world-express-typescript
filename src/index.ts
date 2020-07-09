@@ -23,10 +23,10 @@ app.get('/hello', function (req, res) {
 
 const server = createServer(app)
 
-server.listen(PORT, (err: Error) => {
-	if (err)
-		return console.error('something bad happened', err)
-
-	console.info(`server is listening on ${PORT}`)
+server.on('error', (err: Error) => {
+	console.error('something bad happened', err)
 })
 
+server.listen(PORT, () => {
+	console.info(`server is listening on ${PORT}`)
+})

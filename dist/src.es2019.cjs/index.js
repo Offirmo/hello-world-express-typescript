@@ -16,9 +16,10 @@ app.get('/hello', function (req, res) {
     res.send('hello world!');
 });
 const server = http_1.createServer(app);
-server.listen(PORT, (err) => {
-    if (err)
-        return console.error('something bad happened', err);
+server.on('error', (err) => {
+    console.error('something bad happened', err);
+});
+server.listen(PORT, () => {
     console.info(`server is listening on ${PORT}`);
 });
 //# sourceMappingURL=index.js.map

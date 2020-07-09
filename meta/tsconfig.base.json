@@ -2,7 +2,7 @@
 	"compileOnSave": false,
 	"compilerOptions": {
 		"allowJs": false,
-		"lib": [ "ES2017" ],
+		"lib": [ "ES2019" ],
 		"moduleResolution": "node",
 
 		"listEmittedFiles": false,
@@ -34,8 +34,8 @@
 		"noEmit": false,
 		"declaration": false,
 		"module": "CommonJS",
-		"outDir": "../dist/src.es7.cjs",
-		"target": "es2017"
+		"outDir": "../dist/src.es2019.cjs",
+		"target": "es2019"
 	},
 
 	"include": [
